@@ -1,0 +1,27 @@
+{
+  "name": "passport-thecity",
+  "version": "0.0.0",
+  "description": "The City authentication strategy for Passport.js",
+  "main": "./lib",
+  "scripts": {
+    "test": "\"node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robertleib/passport-thecity"
+  },
+  "keywords": [
+    "passport",
+    "thecity",
+    "The",
+    "City",
+    "authentication",
+    "oauth"
+  ],
+  "author": "Robert Leib",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robertleib/passport-thecity/issues"
+  },
+  "homepage": "https://github.com/robertleib/passport-thecity"
+}

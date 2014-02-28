@@ -4,7 +4,8 @@
   "description": "The City authentication strategy for Passport.js",
   "main": "./lib/passport-thecity",
   "scripts": {
-    "test": "\"node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js\""
+    "test": "mocha -R landing test/index.js",
+    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
@@ -27,8 +28,11 @@
   },
   "homepage": "https://github.com/robertleib/passport-thecity",
   "devDependencies": {
-    "mocha": "~1.17.1"
-  },
+    "should": "3.1.2",
+    "mocha": "1.17.1",
+    "coveralls": "~2.7.0",
+    "istanbul": "~0.2.4"
+  }
   "dependencies": {
     "pkginfo": "~0.3.0",
     "passport-oauth": "~1.0.0"

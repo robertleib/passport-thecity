@@ -3,7 +3,7 @@
 [Passport](https://github.com/jaredhanson/passport) strategy for authenticating
 with [The City](http://api.onthecity.org/) using the OAuth 2.0 API.
 
-This module lets you authenticate using box, in your Node.js applications.  
+This module lets you authenticate using The City, in your Node.js applications.  
 By plugging into Passport, The City
 authentication can be easily and unobtrusively integrated into any application or
 framework that supports [Connect](http://www.senchalabs.org/connect/)-style
